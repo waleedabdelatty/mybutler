@@ -8,9 +8,7 @@ pipeline{
       steps {
         
         echo "Starting Cloning ....."
-        script{
-          git clone "https://github.com/waleedabdelatty/mybutler.git"
-        }
+        git branch: 'main', url: 'https://github.com/waleedabdelatty/mybutler.git'
         echo "repo cloned successfully"
       }
     }
