@@ -6,8 +6,11 @@ pipeline{
   stages{
     stage('Clone'){
       steps {
+        
         echo "Starting Cloning ....."
-        git clone "https://github.com/waleedabdelatty/mybutler.git"
+        script{
+          git clone "https://github.com/waleedabdelatty/mybutler.git"
+        }
         echo "repo cloned successfully"
       }
     }
